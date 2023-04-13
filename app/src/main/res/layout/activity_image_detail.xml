@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        style="@style/Widget.MaterialComponents.AppBarLayout.PrimarySurface"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/imageDetail_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_900"
+            android:layoutDirection="ltr"
+            app:titleTextColor="@color/text_muted" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.github.chrisbanes.photoview.PhotoView
+            android:id="@+id/imageDetail_photoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="MissingClass,MissingConstraints">
+        </com.github.chrisbanes.photoview.PhotoView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/bottom_navigation_view"
+    android:background="@color/gray_900"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    android:overScrollMode="always"
+    android:padding="@dimen/_12sdp"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/userInfo_btn_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/_24sdp"
+            android:width="@dimen/_28sdp"
+            android:height="@dimen/_28sdp"
+            android:background="#00000000"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:padding="0dp"
+            android:text=""
+            app:iconTint="@color/text_muted"
+            app:icon="@drawable/arrow_back_icon"
+            app:iconSize="@dimen/_20sdp"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Thông tin tài khoản"
+            android:textColor="@color/text_muted"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/userInfo_btn_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:width="@dimen/_28sdp"
+            android:height="@dimen/_28sdp"
+            android:backgroundTint="@color/primary"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:padding="0dp"
+            android:text=""
+            app:iconTint="@color/white"
+            app:cornerRadius="@dimen/_8sdp"
+            app:icon="@drawable/edit_icon"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_24sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:background="@drawable/rounded"
+                android:contentDescription=""
+                android:src="@drawable/logo" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/userInfo_button_chooseAvatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginRight="@dimen/_12sdp"
+                android:width="@dimen/_24sdp"
+                android:height="@dimen/_24sdp"
+                android:backgroundTint="@color/primary"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:padding="0dp"
+                android:visibility="gone"
+                android:text=""
+                app:cornerRadius="@dimen/_100sdp"
+                app:icon="@drawable/edit_icon"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                app:iconTint="@color/white"
+                tools:ignore="RtlHardcoded" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Họ tên "
+                android:textColor="@color/text_muted" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textColor="@color/red" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/userInfo_editText_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:background="@drawable/background_input"
+            android:hint="Họ tên"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="auto"
+            android:inputType="textEmailAddress"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:textColor="@color/text_muted"
+            android:textColorHint="@color/text_muted"
+            android:textSize="@dimen/_12sdp"
+            android:enabled="false"
+            android:alpha="0.5"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email "
+                android:textColor="@color/text_muted" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textColor="@color/red" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/userInfo_editText_email"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:background="@drawable/background_input"
+            android:hint="Email"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="auto"
+            android:inputType="textEmailAddress"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:textColor="@color/text_muted"
+            android:textColorHint="@color/text_muted"
+            android:textSize="@dimen/_12sdp"
+            android:enabled="false"
+            android:alpha="0.5"/>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số điện thoại "
+            android:textColor="@color/text_muted" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="@color/red" />
+    </LinearLayout>
+
+        <EditText
+            android:id="@+id/userInfo_editText_phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:background="@drawable/background_input"
+            android:hint="Số điện thoại"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="auto"
+            android:inputType="number"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:textColor="@color/text_muted"
+            android:textColorHint="@color/text_muted"
+            android:textSize="@dimen/_12sdp"
+            android:enabled="false"
+            android:alpha="0.5"/>
+
+        <LinearLayout
+            android:id="@+id/userInfo_wrap_confirm"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/userInfo_btn_saveCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#00000000"
+                android:layout_marginEnd="@dimen/_8sdp"
+                app:strokeColor="@color/text_muted"
+                android:textColor="@color/text_muted"
+                app:strokeWidth="2dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:clickable="true"
+                android:text="Hủy"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/userInfo_btn_saveConfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/primary"
+                android:insetTop="0dp"
+                android:textColor="@color/white"
+                android:insetBottom="0dp"
+                android:text="Lưu thay đổi"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

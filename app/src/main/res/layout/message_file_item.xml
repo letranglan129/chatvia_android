@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/messageTextItem_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/_2sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/_4sdp"
+        android:background="@drawable/background_input"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_4sdp"
+            android:gravity="center_vertical"
+            >
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/userInfo_btn_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:width="@dimen/_36sdp"
+                android:height="@dimen/_36sdp"
+                android:background="@drawable/rounded_primary"
+                android:backgroundTint="@color/primary"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:padding="0dp"
+                android:text=""
+                app:iconTint="@color/white"
+                app:cornerRadius="@dimen/_8sdp"
+                app:icon="@drawable/download_icon"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp" />
+            <TextView
+                android:id="@+id/messageTextItem_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/_8sdp"
+                android:paddingVertical="@dimen/_8sdp"
+                android:text="xoa-ten-20230330032240-e.xls"
+                android:textColor="@color/text_muted"
+                android:textSize="@dimen/_14sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/messageTextItem_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/_8sdp"
+                android:paddingVertical="@dimen/_4sdp"
+                android:text="12:00"
+                android:textColor="@color/text_muted"
+                android:textSize="@dimen/_10sdp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/messageTextItem_viewed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đã xem"
+        android:paddingHorizontal="@dimen/_12sdp"
+        android:paddingVertical="@dimen/_4sdp"
+        android:textColor="@color/text_muted"
+        android:textSize="@dimen/_10sdp" />
+</LinearLayout>

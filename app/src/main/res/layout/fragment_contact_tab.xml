@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/bottom_navigation_view"
+    android:background="@color/gray_900"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    android:overScrollMode="never"
+    android:paddingTop="@dimen/_12sdp"
+    android:scrollbars="none"
+    tools:context=".WrapActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/_12sdp"
+        android:text="Bạn bè"
+        android:textColor="@color/text_muted"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:background="@drawable/background_input"
+        android:hint="Tìm kiếm bạn bè"
+        android:textColor="@color/text_muted"
+        android:textColorHint="@color/text_muted"
+        android:paddingHorizontal="@dimen/_16sdp"
+        android:textSize="@dimen/_14sdp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/contactTab_recyclerview_contactitem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+        </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

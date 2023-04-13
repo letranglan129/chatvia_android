@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chatDetail_drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:fitsSystemWindows="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:orientation="vertical"
+        tools:context=".ChatDetailActivity">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.AppBarLayout.PrimarySurface"
+            android:fitsSystemWindows="true">
+        <androidx.appcompat.widget.Toolbar
+            app:titleTextColor="@color/text_muted"
+            android:id="@+id/chatDetail_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="ltr"
+            android:background="@color/gray_900" />
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/chatDetail_recyclerview_message"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="vertical">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="ltr"
+            android:background="@color/gray_900"
+            android:paddingVertical="@dimen/_12sdp">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:width="@dimen/_28sdp"
+                app:iconTint="@color/text_muted"
+                android:height="@dimen/_28sdp"
+                android:background="#00000000"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:padding="0dp"
+                android:text=""
+                app:icon="@drawable/attach_file_icon"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                app:iconSize="@dimen/_20sdp" />
+
+            <EditText
+                android:id="@+id/chatDetail_message_editText"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_36sdp"
+                android:layout_weight="1"
+                android:background="@drawable/background_input"
+                android:importantForAutofill="auto"
+                android:inputType="textEmailAddress"
+                android:paddingHorizontal="@dimen/_8sdp"
+                android:imeOptions="actionDone"
+                android:textColor="@color/text_muted"
+                android:textColorHint="@color/text_muted"
+                android:textSize="@dimen/_14sdp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:width="@dimen/_36sdp"
+                android:height="@dimen/_28sdp"
+                android:background="#00000000"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:minWidth="0dp"
+                app:iconTint="@color/text_muted"
+                android:minHeight="0dp"
+                android:padding="0dp"
+                android:text=""
+                app:icon="@drawable/emoji_emotions_icon"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                app:iconSize="@dimen/_20sdp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/chatDetail_sendMessage_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:width="@dimen/_36sdp"
+                android:height="@dimen/_28sdp"
+                android:background="#00000000"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:padding="0dp"
+                android:text=""
+                app:iconTint="@color/text_muted"
+                app:icon="@drawable/send_icon"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                app:iconSize="@dimen/_20sdp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/chatDetail_navigationview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:layoutDirection="ltr"
+        android:background="@color/gray_900"
+        app:itemTextColor="@color/text_muted"
+        app:itemIconTint="@color/text_muted"
+        app:headerLayout="@layout/chatdetail_navigationview_header"
+        app:menu="@menu/chatdetail_navigationview_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/bottom_navigation_view"
+    android:background="@color/gray_900"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    android:overScrollMode="never"
+    android:paddingTop="@dimen/_12sdp"
+    android:scrollbars="none"
+    tools:context=".WrapActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:layout_height="wrap_content"
+        android:text="Tin nhắn"
+        android:textColor="@color/text_muted"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:background="@drawable/background_input"
+        android:hint="Tìm kiếm tin nhắn"
+        android:paddingStart="@dimen/_12sdp"
+        android:paddingEnd="@dimen/_12sdp"
+        android:textColor="@color/text_muted"
+        android:textColorHint="@color/text_muted"
+        android:textSize="@dimen/_14sdp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:text="Hoạt động"
+        android:textColor="@color/text_muted"
+        android:textSize="@dimen/_12sdp" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:layout_height="@dimen/_64sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:scrollbars="none">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/chatTab_recyclerview_useractive"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatTab_recyclerview_conversation"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp" android:orientation="vertical">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

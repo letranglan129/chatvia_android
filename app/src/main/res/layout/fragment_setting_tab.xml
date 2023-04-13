@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/bottom_navigation_view"
+    android:background="@color/gray_900"
+    android:orientation="vertical"
+    tools:context=".WrapActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_12sdp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cài đặt"
+            android:textColor="@color/text_muted"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_12sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_marginBottom="@dimen/_12sdp"
+                android:background="@drawable/rounded"
+                android:contentDescription=""
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/settingTab_fullname_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/text_muted"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trực tuyến"
+                android:textAlignment="center"
+                android:textColor="@color/text_muted"
+                android:textSize="@dimen/_14sdp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:background="@color/text_muted" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual."
+            android:textColor="@color/text_muted"
+            android:textSize="@dimen/_12sdp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:dividerHeight="0dp" />
+</LinearLayout>

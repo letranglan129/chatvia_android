@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/chatDetail_item_image"
+        android:icon="@drawable/image_icon"
+        android:title="Hình ảnh"
+        android:checked="true" />
+    <item
+        android:id="@+id/chatDetail_item_file"
+        android:icon="@drawable/file_icon"
+        android:title="File" />
+    <item
+        android:id="@+id/chatDetail_item_member"
+        android:icon="@drawable/group_icon"
+        android:title="Thành viên" />
+    <item
+        android:id="@+id/chatDetail_item_delete"
+        android:icon="@drawable/delete_icon"
+        android:title="Xóa cuộc trò chuyện" />
+    <item
+        android:id="@+id/chatDetail_item_out"
+        android:icon="@drawable/logout_icon"
+        android:title="Rời nhóm" />
+</menu>

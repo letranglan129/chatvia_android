@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/chatDetail_actionBar_more" android:icon="@drawable/menu_icon" app:showAsAction="always"
+        android:title=""  android:iconTint="@color/text_muted"/>
+</menu>

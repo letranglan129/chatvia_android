@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="gray_100">#f6f7f9</color>
+    <color name="gray_200">#e9eaf1</color>
+    <color name="gray_300">#dee0e8</color>
+    <color name="gray_400">#ccd0dd</color>
+    <color name="gray_500">#abb0c1</color>
+    <color name="gray_600">#656e83</color>
+    <color name="gray_700">#454b5c</color>
+    <color name="gray_800">#343746</color>
+    <color name="gray_900">#22252f</color>
+    <color name="black">#1A1C23</color>
+    <color name="text_muted">#abb0c1</color>
+    <color name="text_header">@color/gray_300</color>
+
+    <color name="blue">#058FFF</color>
+    <color name="indigo">#6610F2</color>
+    <color name="purple">#6A6FEA</color>
+    <color name="pink">#D63384</color>
+    <color name="red">#F05564</color>
+    <color name="orange">#FD7E14</color>
+    <color name="yellow">#F8DD57</color>
+    <color name="green">#2BDAA8</color>
+    <color name="teal">#20C997</color>
+    <color name="cyan">#16CEF3</color>
+
+    <color name="primary">@color/blue</color>
+    <color name="secondary">@color/gray_800</color>
+    <color name="success">@color/green</color>
+    <color name="info">@color/purple</color>
+    <color name="warning">@color/yellow</color>
+    <color name="danger">@color/red</color>
+    <color name="light">@color/gray_900</color>
+    <color name="dark">@color/gray_900</color>
+
+    <color name="background_input">@color/gray_800</color>
+    <color name="button_blue">@color/blue</color>
+</resources>

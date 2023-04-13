@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_height="wrap_content"
+    android:id="@+id/conversationitem_linearlayout"
+    android:layout_width="match_parent"
+    android:paddingVertical="@dimen/_8sdp"
+    android:paddingHorizontal="@dimen/_12sdp"
+    android:weightSum="12"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/conversationitem_imageview_avatar"
+        android:src="@drawable/logo"
+        android:scaleType="centerCrop"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        app:riv_oval="true"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:background="@drawable/rounded"
+        android:contentDescription=""
+        android:layout_weight="0"
+        />
+<!--    <ImageView-->
+<!--        android:background="@drawable/rounded"-->
+<!--        android:contentDescription=""-->
+<!--        android:layout_height="@dimen/_40sdp"-->
+<!--        android:layout_weight="0"-->
+<!--        android:layout_width="@dimen/_40sdp"-->
+<!--        android:id="@+id/conversationitem_imageview_avatar"-->
+<!--        android:src="@drawable/logo" />-->
+
+    <LinearLayout
+
+        android:layout_height="match_parent"
+        android:layout_weight="12"
+        android:layout_width="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/conversationitem_textview_name"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Steve Walker"
+            android:textColor="@color/text_header"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/conversationitem_textview_lastmessage"
+            android:ellipsize="end"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="Okay 👍, let me check it and get back to you soon"
+            android:textColor="@color/text_muted"
+            android:textSize="@dimen/_12sdp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/conversationitem_textview_time"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:layout_width="wrap_content"
+        android:text="10:20"
+        android:textColor="@color/text_muted" />
+</LinearLayout>

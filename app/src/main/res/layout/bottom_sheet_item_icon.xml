@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/bottomSheet_item_wrap"
+    android:layout_height="wrap_content"
+    android:paddingVertical="@dimen/_4sdp"
+    android:paddingHorizontal="@dimen/_12sdp"
+    android:background="@drawable/button_focus_selector">
+    <ImageView
+        android:id="@+id/bottomSheet_item_icon"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/text_muted"
+        android:src="@drawable/image_icon" />
+    <TextView
+        android:id="@+id/bottomSheet_item_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:text="My Custom Dialog"
+        android:textColor="@color/text_muted"
+        android:textSize="@dimen/_16sdp"
+        android:padding="14dp"/>
+</LinearLayout>

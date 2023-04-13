@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Chatvia</string>
+    <string name="signIn_welcome_text">Chào mừng bạn đến với Chatvia</string>
+    <string name="signIn_text">Đăng nhập</string>
+    <string name="signUp_welcome_text">Tạo tài khoản Chatvia mới</string>
+    <string name="signUp_text">Đăng ký</string>
+    <string name="tab_1">tab_1</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
